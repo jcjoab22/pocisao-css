@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+    min-height: 200vh; 
+}
+
+.top-bar {
+    background-color: #0f172a;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    padding: 8px 16px;
+    font-size: 0.85rem;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
+    background-color: #1e293b;
+    padding: 35px 30px;
+    box-shadow: 0 8px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #38bdf8;
+}
+
+.navbar .icone img {
+    height: auto;
+    max-width: 150px; 
+    display: block;
+}
+
+.banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://picsum.photos/1200/400') center/cover no-repeat;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    text-align: center;
+}
+
+.banner h1 {
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.content {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+#categorias {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#produtos h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.cards-contariner {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    position: relative;
+    background: #ffffff;
+    border-radius: 8px;
+   
+    width: 280px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.card-body {
+    padding: 16px;
+    text-align: center;
+}
+
+.card-body h3 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+.preco {
+    font-size: 1.2rem;
+    color: #2563eb;
+    font-weight: bold;
+}
+
+.badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background-color: #2563eb;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 4px 10px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    z-index: 10;
+}
+
+
+.btn-suporte {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 9999; 
+    background-color: #2563eb;
+    color: #ffffff;
+    border: none;
+    padding: 14px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.btn-suporte:hover {
+    background-color: #1d4ed8;
+    transform: scale(1.05);
+}
+
+
+.icone {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    right: 95%;
+    top: 1%;
+}
